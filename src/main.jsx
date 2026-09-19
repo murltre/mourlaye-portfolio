@@ -520,9 +520,6 @@ function App() {
               </p>
 
               <div className="contact-links">
-                <a href="mailto:mourlayetraore120@gmail.com">
-                  Email <span>↗</span>
-                </a>
 
                 <a
                   href="https://www.linkedin.com/in/mourlaye120traore/"
