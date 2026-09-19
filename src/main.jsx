@@ -516,9 +516,7 @@ function App() {
               <h2>Let's connect.</h2>
 
               <p className="contact-intro">
-                I’m interested in Data Engineer, Analytics Engineer, and
-                data-focused roles where I can work on real pipelines,
-                databases, and analytics problems.
+                Looking forward to connecting and sharing ideas
               </p>
 
               <div className="contact-links">
