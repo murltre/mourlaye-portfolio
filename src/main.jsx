@@ -458,7 +458,7 @@ function App() {
 
             <div className="now-box">
               <div>
-                <h2>Building toward Data Engineering.</h2>
+                <h2>Currently Working On</h2>
                 <p>
                   Deepening my work with cloud data platforms, ETL pipelines,
                   Spark, SQL, and production-minded data workflows.
