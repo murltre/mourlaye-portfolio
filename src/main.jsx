@@ -315,7 +315,7 @@ function App() {
           <section id="home" className="hero section-anchor">
             <div className="eyebrow"></div>
             <h1 className="hero-overview">
-              Aspired data professional.
+              Aspiring Data Engineer | Data Analyst
             </h1>
             
             <p className="hero-copy">
