@@ -279,6 +279,8 @@ function App() {
             >
               <div className="profile-name">Mourlaye Traore</div>
               <div className="profile-title">Data Engineer | Data Analytics</div>
+                <a> 
+                Dallas-Fort-Worth, TX </a>
             </a>
           </div>
 
