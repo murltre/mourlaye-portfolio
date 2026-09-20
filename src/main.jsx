@@ -9,7 +9,7 @@ const navItems = [
   { id: 'skills', label: 'Technical Skills' },
   { id: 'work', label: 'Featured Projects' },
   { id: 'credentials', label: 'Credentials / Certifications' },
-  { id: 'in-process', label: 'In Process' },
+  { id: 'in-process', label: 'In Progress' },
   { id: 'contact', label: 'Contact Me' },
 ];
 
@@ -454,7 +454,7 @@ function App() {
           </section>
 
           <section id="in-process" className="section now-section section-anchor">
-            <div className="section-kicker">05 / IN PROCESS</div>
+            <div className="section-kicker">05 / IN PROGRESS</div>
 
             <div className="now-box">
               <div>
