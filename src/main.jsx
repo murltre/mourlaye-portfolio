@@ -337,7 +337,7 @@ function App() {
           </section>
 
           <section id="about" className="section about-section section-anchor">
-            <div className="section-kicker">01 / ABOUT ME</div>
+            <div className="section-kicker"> ABOUT ME</div>
 
             <div className="about-content">
               <h2>From Field Engineer to Data Engineering</h2>
@@ -358,7 +358,7 @@ function App() {
             </div>
           </section>
           <section id="skills" className="section section-anchor">
-            <div className="section-kicker">02 / TECHNICAL SKILLS</div>
+            <div className="section-kicker"> TECHNICAL SKILLS</div>
             <div className="section-heading">
               <h2>Tools I have experience with</h2>
               <p>Technical tools I use across engineering, analytics, and data projects.</p>
@@ -378,7 +378,7 @@ function App() {
           </section>
 
           <section id="work" className="section section-anchor">
-            <div className="section-kicker">03 / FEATURED PROJECTS</div>
+            <div className="section-kicker"> FEATURED PROJECTS</div>
             <div className="section-heading">
               <h2>Projects</h2>
               <p>Learn more about each project by clicking on the link, "Project details".</p>
@@ -421,7 +421,7 @@ function App() {
           </section>
 
           <section id="credentials" className="section section-anchor">
-            <div className="section-kicker">04 / CREDENTIALS & CERTIFICATIONS</div>
+            <div className="section-kicker"> CREDENTIALS & CERTIFICATIONS</div>
             <div className="section-heading">
               <h2>Accomplishments</h2>
               <p></p>
@@ -454,7 +454,7 @@ function App() {
           </section>
 
           <section id="in-process" className="section now-section section-anchor">
-            <div className="section-kicker">05 / IN PROGRESS</div>
+            <div className="section-kicker"> IN PROGRESS</div>
 
             <div className="now-box">
               <div>
@@ -513,7 +513,7 @@ function App() {
           </section>
           <section id="contact" className="section contact-section section-anchor">
             <div className="contact-content">
-              <div className="section-kicker">06 / CONTACT ME</div>
+              <div className="section-kicker"> CONTACT ME</div>
 
               <h2>Let's connect.</h2>
 
