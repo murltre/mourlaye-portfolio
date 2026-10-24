@@ -14,6 +14,57 @@ const navItems = [
 ];
 
 const projects = [
+   // Streaming pipeline: Python producer → Kafka → MySQL.
+  {
+    title: 'Apache Kafka Streaming ETL Pipeline',
+    tag: 'Real-Time Streaming + ETL',
+    description:
+      'Built a streaming pipeline where a Python producer publishes simulated toll events to Apache Kafka and a consumer validates messages before inserting them into MySQL.',
+    tools: ['Python', 'Apache Kafka', 'JSON', 'MySQL', 'SQL'],
+    github:
+      'https://github.com/murltre/Apache-Kafka-Streaming-ETL-Pipeline-Traffic-Data-to-MySQL',
+  },
+   // One project card for both Airflow operator implementations.
+  {
+    title: 'Toll Data ETL with Apache Airflow',
+    tag: 'Workflow Orchestration + ETL',
+    description:
+      'Built two Airflow workflows for toll data in CSV, TSV, and fixed-width formats, using BashOperator for shell-based steps and PythonOperator for Python-based processing.',
+    tools: [
+      'Apache Airflow',
+      'BashOperator',
+      'PythonOperator',
+      'Python',
+      'CSV / TSV / Fixed-width',
+    ],
+    links: [
+      {
+        label: 'BashOperator repo',
+        url: 'https://github.com/murltre/ETL-Pipeline-with-Apache-Airflow-BashOperator-',
+      },
+      {
+        label: 'PythonOperator repo',
+        url: 'https://github.com/murltre/Toll-Data-ETL-Pipeline-with-Apache-Airflow-PythonOperator-',
+      },
+    ],
+  },
+
+  // Multi-format ingestion and Bronze/Silver/Gold processing.
+  {
+    title: 'Meridian Multi-Format ETL Pipeline',
+    tag: 'ETL + Azure Databricks',
+    description:
+      'Built a scheduled pipeline that ingests CSV, JSON, XML, and Excel files, cleans the data through Bronze/Silver/Gold layers, and consolidates sales with revenue and profit in USD.',
+    tools: [
+      'Databricks',
+      'Python',
+      'Pandas',
+      'glob',
+      'CSV / JSON / XML / Excel',
+    ],
+    github:
+      'https://github.com/murltre/meridian-multiformat-files-etl-pipeline-azure-databricks',
+  },
   {
     title: 'United States Emissions Breakdown',
     tag: 'Data Engineering + Analytics',
@@ -113,7 +164,16 @@ const toolColors = {
 const skillGroups = [
   {
     label: 'Data Engineering',
-    items: ['PySpark', 'Apache Spark', 'Hadoop', 'Hive', 'ETL / ELT'],
+    items: [
+      'PySpark',
+      'Apache Spark',
+      'Apache Kafka',
+      'Apache Airflow',
+      'Hadoop',
+      'Hive',
+      'ETL / ELT',
+      'Multi-format Ingestion',
+    ],
   },
   {
     label: 'Analytics & Automation',
@@ -408,19 +468,34 @@ function App() {
                       );
                     })}
                   </div>
-                  <a
-                    className="project-link"
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Project details <span>→</span>
-                  </a>
+
+                  {project.links ? (
+                    project.links.map((link) => (
+                      <a
+                        key={link.label}
+                        className="project-link"
+                        href={link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {link.label} <span>→</span>
+                      </a>
+                    ))
+                  ) : (
+                    <a
+                      className="project-link"
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project details <span>→</span>
+                    </a>
+                  )}
                 </article>
               ))}
             </div>
           </section>
-
+        
           <section id="credentials" className="section section-anchor">
             <div className="section-kicker"> CREDENTIALS & CERTIFICATIONS</div>
             <div className="section-heading">
