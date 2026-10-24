@@ -15,11 +15,3 @@ npm run dev
 npm run build
 ```
 
-## Before publishing
-
-Update the placeholder contact links in `src/main.jsx`:
-- `YOUR_EMAIL@example.com`
-- LinkedIn URL
-- GitHub URL
-
-Then push the folder to GitHub and connect the repository to Netlify.
