@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
-import { SiDatabricks, SiApachespark, SiPython } from 'react-icons/si';
+import { SiDatabricks, 
+        SiApachespark, 
+        SiPython,
+        SiApachekafka,
+        SiApacheairflow} from 'react-icons/si';
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -151,14 +155,24 @@ const projects = [
 
 const toolIcons = {
   Databricks: SiDatabricks,
+  'Azure Databricks': SiDatabricks, // Same icon for Azure Databricks
   PySpark: SiApachespark,
+  'Apache Spark': SiApachespark,    // Same icon for Apache Spark
   Python: SiPython,
+  'Python Automation': SiPython,    // Python icon for automation
+  'Apache Kafka': SiApachekafka,
+  'Apache Airflow': SiApacheairflow,
 };
 
 const toolColors = {
   Databricks: '#E74C3C',
+  'Azure Databricks': '#E74C3C',
   PySpark: '#E86A17',
+  'Apache Spark': '#E86A17',
   Python: '#3776AB',
+  'Python Automation': '#3776AB',
+  'Apache Kafka': '#231F20',
+  'Apache Airflow': '#017CEE',
 };
 
 const skillGroups = [
@@ -429,9 +443,21 @@ function App() {
                 <article className="skill-card" key={group.label}>
                   <h3>{group.label}</h3>
                   <div className="pill-row">
-                    {group.items.map((item) => (
-                      <span className="pill" key={item}>{item}</span>
-                    ))}
+                    {group.items.map((item) => {
+                      const Icon = toolIcons[item]; // Look up the tool's icon
+                      return (
+                        <span className="pill" key={item}>
+                          {Icon && (
+                            <Icon
+                              className="tool-icon"
+                              style={{ color: toolColors[item] }}
+                              aria-hidden="true"
+                            />
+                          )}
+                          {item}
+                        </span>
+                      );
+                    })}
                   </div>
                 </article>
               ))}
