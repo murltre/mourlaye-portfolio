@@ -153,28 +153,33 @@ const projects = [
 
 ];
 
+// Map tool names to their corresponding icons
 const toolIcons = {
   Databricks: SiDatabricks,
-  'Azure Databricks': SiDatabricks, // Same icon for Azure Databricks
+  'Azure Databricks': SiDatabricks,
   PySpark: SiApachespark,
-  'Apache Spark': SiApachespark,    // Same icon for Apache Spark
+  'Apache Spark': SiApachespark,
   Python: SiPython,
-  'Python Automation': SiPython,    // Python icon for automation
+  'Python Automation': SiPython,
   'Apache Kafka': SiApachekafka,
   'Apache Airflow': SiApacheairflow,
+  Git: SiGit,
+  GitHub: SiGithub,
 };
 
+// Use darker colors for better visibility on light backgrounds
 const toolColors = {
-  Databricks: '#E74C3C',
-  'Azure Databricks': '#E74C3C',
-  PySpark: '#E86A17',
-  'Apache Spark': '#E86A17',
-  Python: '#3776AB',
-  'Python Automation': '#3776AB',
+  Databricks: '#B83B2D',
+  'Azure Databricks': '#B83B2D',
+  PySpark: '#C45100',
+  'Apache Spark': '#C45100',
+  Python: '#245A86',
+  'Python Automation': '#245A86',
   'Apache Kafka': '#231F20',
-  'Apache Airflow': '#017CEE',
+  'Apache Airflow': '#005A9C',
+  Git: '#D84326',
+  GitHub: '#181717',
 };
-
 const skillGroups = [
   {
     label: 'Data Engineering',
@@ -214,21 +219,22 @@ const skillGroups = [
     ],
   },
   {
-    label: 'Languages & Development Tools',
-    items: [
-      'SQL',
-      'Python',
-      'R',
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'React',
-      'Jupyter Notebook',
-      'VS Code',
-    ],
-  },
-];
-
+  label: 'Languages & Development Tools',
+  items: [
+    'SQL',
+    'Python',
+    'R',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'React',
+    'Jupyter Notebook',
+    'VS Code',
+    'Git',
+    'GitHub',
+  ],
+},
+  
 const certifications = [
   {
     title: 'Microsoft Certified: Azure Data Scientist Associate',
