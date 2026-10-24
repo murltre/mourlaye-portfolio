@@ -583,11 +583,11 @@ function App() {
                   <h3>IBM Data Engineering</h3>
                 </div>
 
-                <div className="progress-count">7 / 16</div>
+                <div className="progress-count">11 / 16</div>
               </div>
 
               <p>
-                Currently completing the IBM Data Engineering program, with 7 of 16
+                Currently completing the IBM Data Engineering program, with 11 of 16
                 courses completed.
               </p>
 
@@ -595,17 +595,10 @@ function App() {
                 <div className="progress-fill"></div>
               </div>
 
-              <div className="progress-percent">43.75% complete</div>
+              <div className="progress-percent">65% complete</div>
             </div>
               <div className="process-card">
               <div className="process-label">IN PROGRESS</div>
-              <h3>Multi-Format ETL Pipeline</h3>
-
-              <p>
-                Building an ETL workflow that ingests files from different sources and
-                formats, standardizes their structure, and prepares them for consistent
-                downstream processing.
-              </p>
 
               <p className="process-note">
                 Exploring automated file ingestion with Python, including pattern-based
