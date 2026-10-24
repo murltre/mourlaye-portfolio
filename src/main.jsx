@@ -24,12 +24,13 @@ const projects = [
       'https://github.com/murltre/US-County-Emissions-Dashboard-Built-with-Databricks-PySpark',
   },
   {
-    title: 'GDP ETL Pipeline',
-    tag: 'ETL Pipeline',
+    title: 'Country GDP ETL Pipeline',
+    tag: 'ETL + Azure Databricks',
     description:
-      'Created an ETL workflow that extracts economic data from public sources, transforms monetary values, and loads curated results into reusable CSV and SQLite outputs.',
-    tools: ['Python', 'Pandas', 'Web Scraping', 'SQLite'],
-    github: 'https://github.com/murltre/country-gdp-pipeline',
+      'Built an ETL pipeline to extract country GDP data from Wikipedia, validate and transform records, and produce reusable CSV and SQLite outputs with logging and data-quality checks.',
+    tools: ['Databricks', 'Python', 'Pandas', 'SQLite'],
+    github:
+      'https://github.com/murltre/country-gdp-pipeline-Azure-databricks',
   },
   {
     title: 'Coffee Shop Chain — Central Database Design',
