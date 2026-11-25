@@ -234,6 +234,7 @@ const skillGroups = [
     'GitHub',
   ],
 },
+
 const certifications = [
   {
     title: 'Microsoft Certified: Azure Data Scientist Associate',
