@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
-import { SiDatabricks, 
-        SiApachespark, 
-        SiPython,
-        SiApachekafka,
-        SiApacheairflow} from 'react-icons/si';
+import {
+  SiDatabricks,
+  SiApachespark,
+  SiPython,
+  SiApachekafka,
+  SiApacheairflow,
+  SiGit,
+  SiGithub,
+} from 'react-icons/si';
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -103,24 +107,24 @@ const projects = [
     github: 'https://github.com/murltre/coffee-shop-database-design',
   },
   {
-  title: 'IBM Data Analyst Capstone — Customer Loyalty & Developer Trends',
-  tag: 'Data Analytics + BI',
-  description:
+    title: 'IBM Data Analyst Capstone — Customer Loyalty & Developer Trends',
+    tag: 'Data Analytics + BI',
+    description:
     'End-to-end analytics project covering data sourcing, data wrangling, exploratory analysis, and interactive dashboards focused on customer satisfaction drivers and global developer technology trends.',
-  tools: [
-    'Python',
-    'Pandas',
-    'NumPy',
-    'IBM Cognos Analytics',
-    'Looker Studio',
-    'APIs',
-    'Web Scraping',
-  ],
-  github:
+    tools: [
+      'Python',
+      'Pandas',
+      'NumPy',
+      'IBM Cognos Analytics',
+      'Looker Studio',
+      'APIs',
+      'Web Scraping',
+    ],
+    github:
     'https://github.com/murltre/IBM-Data-Analyst-Capstone-Customer-Loyalty-Developer-Trends-Dashboard-',
-},
-{
-  title: 'Credit Risk Modeling Using XGBoost & Neural Networks',
+  },
+  {
+    title: 'Credit Risk Modeling Using XGBoost & Neural Networks',
   tag: 'Machine Learning + Risk Analytics',
   description:
     'Developed and compared XGBoost and Neural Network models to predict customer default probability. The project combined feature engineering, SHAP-based feature selection, AUC evaluation, and threshold analysis to support practical credit-risk strategies.',
@@ -180,6 +184,7 @@ const toolColors = {
   Git: '#D84326',
   GitHub: '#181717',
 };
+
 const skillGroups = [
   {
     label: 'Data Engineering',
@@ -219,22 +224,22 @@ const skillGroups = [
     ],
   },
   {
-  label: 'Languages & Development Tools',
-  items: [
-    'SQL',
-    'Python',
-    'R',
-    'JavaScript',
-    'HTML',
-    'CSS',
-    'React',
-    'Jupyter Notebook',
-    'VS Code',
-    'Git',
-    'GitHub',
-  ],
-},
-]
+    label: 'Languages & Development Tools',
+    items: [
+      'SQL',
+      'Python',
+      'R',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'React',
+      'Jupyter Notebook',
+      'VS Code',
+      'Git',
+      'GitHub',
+    ],
+  },
+];
 
 const certifications = [
   {
@@ -363,9 +368,8 @@ function App() {
               onClick={() => setActiveSection('home')}
             >
               <div className="profile-name">Mourlaye Traore</div>
-              <div className="profile-title">Data Engineer | Data Analytics</div>
-                <a> 
-                Dallas-Fort-Worth, TX </a>
+              <div className="profile-title">Data Engineer | Data Analyst</div>
+              <div className="profile-location">Dallas-Fort Worth, TX</div>
             </a>
           </div>
 
@@ -405,7 +409,7 @@ function App() {
           <section id="home" className="hero section-anchor">
             <div className="eyebrow"></div>
             <h1 className="hero-overview">
-              Aspiring Data Engineer | Data Analyst
+              Data Engineer | Data Analyst
             </h1>
             
             <p className="hero-copy">
@@ -425,10 +429,10 @@ function App() {
           </section>
 
           <section id="about" className="section about-section section-anchor">
-            <div className="section-kicker"> ABOUT ME</div>
+            <div className="section-kicker">ABOUT ME</div>
 
             <div className="about-content">
-              <h2>From Field Engineer to Data Engineering</h2>
+              <h2>From Field Engineering to Data Engineering</h2>
 
               <div className="about-story">
                 <p>
@@ -446,7 +450,7 @@ function App() {
             </div>
           </section>
           <section id="skills" className="section section-anchor">
-            <div className="section-kicker"> TECHNICAL SKILLS</div>
+            <div className="section-kicker">TECHNICAL SKILLS</div>
             <div className="section-heading">
               <h2>Tools I have experience with</h2>
               <p>Technical tools I use across engineering, analytics, and data projects.</p>
@@ -478,7 +482,7 @@ function App() {
           </section>
 
           <section id="work" className="section section-anchor">
-            <div className="section-kicker"> FEATURED PROJECTS</div>
+            <div className="section-kicker">FEATURED PROJECTS</div>
             <div className="section-heading">
               <h2>Projects</h2>
               <p>Learn more about each project by clicking on the link, "Project details".</p>
@@ -536,10 +540,9 @@ function App() {
           </section>
         
           <section id="credentials" className="section section-anchor">
-            <div className="section-kicker"> CREDENTIALS & CERTIFICATIONS</div>
+            <div className="section-kicker">CREDENTIALS & CERTIFICATIONS</div>
             <div className="section-heading">
               <h2>Accomplishments</h2>
-              <p></p>
             </div>
             <h3>Certifications</h3>
 
@@ -569,7 +572,7 @@ function App() {
           </section>
 
           <section id="in-process" className="section now-section section-anchor">
-            <div className="section-kicker"> IN PROGRESS</div>
+            <div className="section-kicker">IN PROGRESS</div>
 
             <div className="now-box">
               <div>
@@ -588,7 +591,7 @@ function App() {
                 <span>Data Pipelines</span>
               </div>
             </div>
-              <div className="process-card">
+            <div className="process-card">
               <div className="process-label">IN PROGRESS</div>
 
               <p className="process-note">
@@ -599,7 +602,7 @@ function App() {
           </section>
           <section id="contact" className="section contact-section section-anchor">
             <div className="contact-content">
-              <div className="section-kicker"> CONTACT ME</div>
+              <div className="section-kicker">CONTACT ME</div>
 
               <h2>Let's connect.</h2>
 
@@ -653,7 +656,7 @@ function App() {
 
           <footer className="footer container">
             <span>© {new Date().getFullYear()} Mourlaye Traore</span>
-            <span>Data Engineer | Data Analytics</span>
+            <span>Data Engineer | Data Analyst</span>
           </footer>
         </main>
       </div>
