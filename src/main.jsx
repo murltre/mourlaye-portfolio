@@ -589,28 +589,6 @@ function App() {
                 <span>Data Pipelines</span>
               </div>
             </div>
-
-            <div className="progress-card">
-              <div className="progress-header">
-                <div>
-                  <div className="progress-label">CURRENTLY LEARNING</div>
-                  <h3>IBM Data Engineering</h3>
-                </div>
-
-                <div className="progress-count">11 / 16</div>
-              </div>
-
-              <p>
-                Currently completing the IBM Data Engineering program, with 11 of 16
-                courses completed.
-              </p>
-
-              <div className="progress-track">
-                <div className="progress-fill"></div>
-              </div>
-
-              <div className="progress-percent">65% complete</div>
-            </div>
               <div className="process-card">
               <div className="process-label">IN PROGRESS</div>
 
