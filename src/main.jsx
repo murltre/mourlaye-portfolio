@@ -234,7 +234,7 @@ const skillGroups = [
     'GitHub',
   ],
 },
-  
+
 const certifications = [
   {
     title: 'Microsoft Certified: Azure Data Scientist Associate',
@@ -242,9 +242,9 @@ const certifications = [
     type: 'Certification',
   },
   {
-    title: '𝗜𝗕𝗠 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗲.',
-    detail: 'Professional Certificate',
-    type: 'Specialization',
+    title: 'IBM Data Engineering Professional Certificate',
+    detail: 'IBM · Coursera · 16 courses',
+    type: 'Professional Certificate',
   },
   {
     title: 'Microsoft Power BI Data Analyst Specialization',
@@ -257,7 +257,7 @@ const certifications = [
     type: 'Certificate',
   },
 ];
-
+ 
 const education = [
   {
     title: 'M.S. in Business Analytics & A.I.',
