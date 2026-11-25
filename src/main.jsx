@@ -242,6 +242,11 @@ const certifications = [
     type: 'Certification',
   },
   {
+    title: '𝗜𝗕𝗠 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗣𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗲.',
+    detail: 'Professional Certificate',
+    type: 'Specialization',
+  },
+  {
     title: 'Microsoft Power BI Data Analyst Specialization',
     detail: 'Microsoft · 8 courses',
     type: 'Specialization',
@@ -390,6 +395,9 @@ function App() {
             </a>
             <a href="https://github.com/murltre" target="_blank" rel="noreferrer">
               GitHub
+            </a>
+            <a href="https://murltre.netlify.app/" target="_blank" rel="noreferrer">
+              Netlify
             </a>
           </div>
         </aside>
