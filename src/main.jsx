@@ -234,7 +234,6 @@ const skillGroups = [
     'GitHub',
   ],
 },
-
 const certifications = [
   {
     title: 'Microsoft Certified: Azure Data Scientist Associate',
@@ -257,7 +256,6 @@ const certifications = [
     type: 'Certificate',
   },
 ];
- 
 const education = [
   {
     title: 'M.S. in Business Analytics & A.I.',
@@ -275,7 +273,6 @@ const education = [
     detail: 'Minor: Mathematics',
   },
 ];
-
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
