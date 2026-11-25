@@ -234,6 +234,7 @@ const skillGroups = [
     'GitHub',
   ],
 },
+]
 
 const certifications = [
   {
